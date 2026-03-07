@@ -1,0 +1,22 @@
+#ALGORITMO
+#PEDIR VALOR DE LA BASE DE TRIANGULO EN METROS
+#PEDIR VALOR DE LA ALTURA DE TRIANGULO EN METROS
+#CALCULAR EL AREA USANDO LA FORMULA area=(base*altura)/2
+#MOSTRAR EL AREA CALCULADA
+#EVALUAR LA SIGUIENTE CONDICION
+#EL AREA ES MAYOR QUE 100 -> EL PROGRAMA DEBE MOSTRAR "TRUE"
+#EL AREA ES MENOR O IGUAL QUE 100 -> EL PROGRAMA DE BE MOSTAR "FALSE"
+
+#PSEUDOCODIGO
+#LEER LA BASE DEL TRIANGULO
+#LEER LA ALTURA DEL TRIANGULO
+#AREA<-(base*altura)/2
+#ESCRIBIR SI AREA ES MAYOR QUE 100
+#ESCRIBIR SI MENOR O IGUAL A 100
+
+base =int(input("ingrese el valor de la base:"))
+altura=int(input("ingrese el valor de la altura:"))
+area=(base*altura)/2
+print(base*altura)/2
+print("el area del triangulo es:",area)
+print("El area del triangulo es mayor que 100?",area>100)
