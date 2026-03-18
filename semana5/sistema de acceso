@@ -1,0 +1,15 @@
+usuario_ingresado = input("Nombre de usuario: ")
+clave_ingresada = input("Contraseña: ")
+
+usuario_correcto = "admin"
+clave_correcta = "uniminuto2024"
+
+if usuario_ingresado == usuario_correcto:
+    
+    if clave_ingresada == clave_correcta:
+        print("Acceso concedido. Bienvenido,", usuario_correcto)
+    else:
+        print("Contraseña incorrecta")
+
+else:
+    print("Usuario no encontrado")
