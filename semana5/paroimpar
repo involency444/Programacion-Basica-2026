@@ -3,8 +3,7 @@ numero = int(input("Ingrese un número entero: "))
 if numero % 2 == 0:
   resultado = "PAR"
   print("El número es", resultado)
-  print("El valor ingresado es", valor)
+  
 else:
   resultado = "IMPAR"
   print("El número es", resultado)
-  print("El valor ingresado es", valor)
