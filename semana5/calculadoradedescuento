@@ -1,0 +1,11 @@
+#Pedir el valor de la compra
+compra=int(input("Ingrese el valor total de la compra: "))
+if compra>100000:
+
+  total=int(compra * 0.85)  # Aplicar 15% de descuento
+  print("El descuento aplica.")
+else:
+  total=compra
+  print("El descuento no aplica.")
+
+print(f"Total a pagar: {total}")
