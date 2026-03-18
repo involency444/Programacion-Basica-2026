@@ -1,0 +1,17 @@
+hora = int(input("Hora de inicio (0-23): "))
+distancia = float(input("Distancia del viaje en km: "))
+
+total = 5000
+
+if hora >= 21 or hora <= 5:
+    recargo_nocturno = 5000 * 0.30
+    total = total + recargo_nocturno
+    print("Aplica recargo nocturno: $", round(recargo_nocturno))
+
+if distancia > 10:
+    km_extras = distancia - 10
+    costo_extra = km_extras * 800
+    total = total + costo_extra
+    print("Km adicionales:", round(km_extras), "| Costo extra: $", round(costo_extra))
+
+print("El costo total del viaje es: $", round(total))
