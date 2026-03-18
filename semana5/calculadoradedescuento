@@ -1,11 +1,13 @@
 #Pedir el valor de la compra
-compra=int(input("Ingrese el valor total de la compra: "))
-if compra>100000:
+valor=int(input("Ingrese el valor total de la compra: "))
+valor
+if valor > 100000:
 
-  total=int(compra * 0.85)  # Aplicar 15% de descuento
-  print("El descuento aplica.")
+Descuento = valor * 0.15
+Total = valor - Descuento
+print ("El descuento si aplica")
+print ("El valor de la compra es ", Total)
 else:
-  total=compra
-  print("El descuento no aplica.")
-
-print(f"Total a pagar: {total}")
+Total = valor
+print ("El descuento no aplica")
+print ("El valor de la compra es ", Total)
