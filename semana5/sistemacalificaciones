@@ -1,0 +1,21 @@
+nota = float(input("Ingrese la nota del estudiante: "))
+
+if nota >= 4.5 and nota <= 5.0:
+    print("A - EXCELENTE | Aprobado")
+
+elif nota >= 4.0 and nota <= 4.4:
+    print("B - SOBRESALIENTE | Aprobado")
+
+elif nota >= 3.5 and nota <= 3.9:
+    print("C - BUENO | Aprobado")
+
+elif nota >= 3.0 and nota <= 3.4:
+    print("D - ACEPTABLE | Aprobado")
+
+else:
+    print("E - REPROBADO")
+    
+    if nota >= 2.0 and nota <= 2.9:
+        print("Puede presentar habilitación")
+    else:
+        print("Sin derecho a habilitación")
