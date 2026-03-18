@@ -1,0 +1,28 @@
+membresia = input("Tipo de membresía (regular, silver, gold): ")
+compra = int(input("Valor de la compra: "))
+es_temporada = input("¿Es temporada de rebajas? (si/no): ")
+
+descuento = 0
+envio_gratis = False
+
+if membresia == "silver":
+    if compra > 50000:
+        descuento = 10
+
+elif membresia == "gold":
+    descuento = 20
+    if compra > 100000:
+        envio_gratis = True
+
+if es_temporada == "si":
+    descuento = descuento + 5
+
+precio_final = compra * (1 - descuento / 100)
+
+print("Descuento aplicado:", descuento, "%")
+if envio_gratis:
+    print("¡Tienes envío gratis!")
+else:
+    print("No aplica envío gratis")
+    
+print("Precio final a pagar: $", round(precio_final))
