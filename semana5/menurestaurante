@@ -1,0 +1,18 @@
+print(" MENÚ DEL DÍA ")
+print("1) Bandeja Paisa ($18.000)")
+print("2) Ajiaco ($15.000)")
+print("3) Sancocho ($12.000)")
+
+opcion = int(input("Elige el número de tu plato: "))
+
+if opcion == 1:
+    print("Elegiste: Bandeja Paisa - $18.000")
+
+elif opcion == 2:
+    print("Elegiste: Ajiaco - $15.000")
+
+elif opcion == 3:
+    print("Elegiste: Sancocho - $12.000")
+
+else:
+    print("Opción no válida, intenta de nuevo")
