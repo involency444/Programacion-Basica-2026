@@ -1,0 +1,19 @@
+eleccion = input("Elige piedra, papel o tijera: ")
+
+pc = "piedra"
+
+if eleccion == "piedra" or eleccion == "papel" or eleccion == "tijera":
+    
+    print("PC eligió:", pc)
+
+    if eleccion == pc:
+        print("EMPATE")
+    
+    elif eleccion == "papel":
+        print("GANASTE: papel le gana a piedra")
+    
+    else: 
+        print("PERDISTE: piedra le gana a tijera")
+
+else:
+    print("Opción inválida. Elige piedra, papel o tijera")
