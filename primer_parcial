@@ -1,1 +1,21 @@
+#Pedir el nombre del usuario
+#Pedir el consumo a metros cubicos
+#Verificar que los datos del usuario sean correctos
+#Verificar el consumo del usuario
+#Verificar si el consumo del usuario es bajo
+#Verificar si el consumo del usuario es medio
+#Verificar si el consumo del usuario es alto
 
+nombre = input("Ingrese su nombre: ")
+consumo = int(input("Ingrese su consumo de agua en m³: "))
+if consumo <= 0:
+  print("Incorrecto, el consumo debe ser mayor a 0")
+elif consumo <= 15:
+  print(nombre, "su consumo es bajo")
+  print("Enhorabuena, eres un usuario responsable del consumo del agua")
+elif consumo <= 30:
+  print(nombre, "su consumo es medio")
+  print("Eres un usuario promedio del consumo del agua")
+elif consumo >= 50:
+  print(nombre, "su consumo es alto")
+  print("ALTO, tu consumo de agua es alto, revisa posibles fugas")
